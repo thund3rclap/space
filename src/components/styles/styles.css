@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: black;
+  }
+
+
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+} 
+
+/* Subheader*/
+
+.subheader-area {
+    position: relative;
+    z-index: 0;
+    color: aliceblue;
+}
+
+.subheader-area .page-single {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.subheader-text {
+    width: 600px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+
+/*----Header------*/
+.header-area{
+    position: relative;
+    z-index: 0;
+    color: brown;
+}
+
+.header-area .page-single{
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-bg {
+    background-image: url("../../../public/img/header-bg.jpeg");
+}
+
+
+/* Content */
+.content-area {
+    background-color: black;
+    position: relative;
+    z-index: 0;
+    color: brown;
+}
+
+.content-area .page-single {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.content-area .page-single:hover > .painter-text {
+    transition: all 0.5s ease-in;
+    transform: scale(1.2);
+
+}
+
+
+.bg-van-gog {
+    background-image: url("../../../public/img/starry-night.jpeg");
+}
+
+.bg-vermeer {
+    background-image: url("../../../public/img/girl-with-pearl.jpeg");
+}
+
+.bg-rembrandt {
+    background-image: url("../../../public/img/night-watch.jpeg");
+}
+.bg-michelangelo {
+    background-image: url("../../../public/img/adams-creation.jpeg");
+}
+
+
+
+
+.fade-in-text {
+    animation: fadeInText 3s;
+    -webkit-animation: fadeInText 3s;
+    -moz-animation: fadeInText 3s;
+    -o-animation: fadeInText 3s;
+    -ms-animation: fadeInText 3s;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fade-in-left {
+    font-size: 150px;
+    animation: fadeInLeft 3s;
+    -webkit-animation: fadeInLeft 3s;
+    -moz-animation: fadeInLeft 3s;
+    -o-animation: fadeInLeft 3s;
+    -ms-animation: fadeInLeft 3s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-right {
+    font-size: 150px;
+    animation: fadeInRight 2s;
+    -webkit-animation: fadeInRight 2s;
+    -moz-animation: fadeInRight 2s;
+    -o-animation: fadeInRight 2s;
+    -ms-animation: fadeInRight 2s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
